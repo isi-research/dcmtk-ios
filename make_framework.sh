@@ -6,7 +6,7 @@ mkdir -p /usr/local/frameworks/dcmtk.framework/Headers
 source build.sh
 
 cd ../..
-cp -r `pwd`/dependencies/include/*.h /usr/local/frameworks/dcmtk.framework/Headers
+cp -r `pwd`/dependencies/include/dcmtk/* /usr/local/frameworks/dcmtk.framework/Headers
 
 libs=( $(ls `pwd`/dependencies/*.a) )
 libtool -static -o \
